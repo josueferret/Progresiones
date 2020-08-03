@@ -2,16 +2,18 @@ body {
     background-color: #1E1E1E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-user-select: none;
+    overflow: hidden;
 }
 
 #contenedor {
     padding: 1em;
     border-radius: 1em;
     position: relative;
-    width: 90%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     background-color: transparent;
+    margin: 0;
 }
 
 .nota {
@@ -20,30 +22,29 @@ body {
     text-align: center;
     border-radius: 0.4em;
     position: relative;
-    margin: 0.5em;
+    margin: 0 em;
     background-color: transparent;
     padding: 1em;
     border: 1px solid transparent;
 }
 
 #botones {
+    margin-top: 2em;
     position: relative;
-    margin: 3em;
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 5em;
 }
 
 #reset {
-    width: 5em;
+    width: 4em;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
 #play {
-    width: 5em;
+    width: 4em;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -53,8 +54,8 @@ body {
     background-color: teal;
     border-radius: 50%;
     color: white;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     font-size: 40px;
     text-align: center;
     position: relative;
@@ -64,5 +65,5 @@ body {
 
 #segundos {
     position: relative;
-    transform: translateY(-55%);
+    transform: translateY(-69%);
 }
