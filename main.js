@@ -208,11 +208,13 @@ function sonido() {
         document.getElementsByClassName("nota")[2].style.border = "1px solid transparent";
         document.getElementsByClassName("nota")[3].style.border = "1px solid transparent";
 
+        let volumen = 0.1;
+
         frecuenciaActual = frecuencia1;
         osc1.frequency.setValueAtTime(frecuenciaActual[0], aContext.currentTime);
         osc2.frequency.setValueAtTime(frecuenciaActual[1], aContext.currentTime);
         osc3.frequency.setValueAtTime(frecuenciaActual[2], aContext.currentTime);
-        gainNode.gain.setValueAtTime(0.02, aContext.currentTime);
+        gainNode.gain.setValueAtTime(volumen, aContext.currentTime);
         document.getElementsByClassName("nota")[0].style.border = "1px solid white";
         document.getElementsByClassName("nota")[1].style.border = "1px solid transparent";
         document.getElementsByClassName("nota")[2].style.border = "1px solid transparent";
@@ -223,7 +225,7 @@ function sonido() {
             osc1.frequency.setValueAtTime(frecuenciaActual[0], aContext.currentTime);
             osc2.frequency.setValueAtTime(frecuenciaActual[1], aContext.currentTime);
             osc3.frequency.setValueAtTime(frecuenciaActual[2], aContext.currentTime);
-            gainNode.gain.setValueAtTime(0.02, aContext.currentTime);
+            gainNode.gain.setValueAtTime(volumen, aContext.currentTime);
             document.getElementsByClassName("nota")[0].style.border = "1px solid transparent";
             document.getElementsByClassName("nota")[1].style.border = "1px solid white";
             document.getElementsByClassName("nota")[2].style.border = "1px solid transparent";
@@ -235,7 +237,7 @@ function sonido() {
             osc1.frequency.setValueAtTime(frecuenciaActual[0], aContext.currentTime);
             osc2.frequency.setValueAtTime(frecuenciaActual[1], aContext.currentTime);
             osc3.frequency.setValueAtTime(frecuenciaActual[2], aContext.currentTime);
-            gainNode.gain.setValueAtTime(0.02, aContext.currentTime);
+            gainNode.gain.setValueAtTime(volumen, aContext.currentTime);
             document.getElementsByClassName("nota")[0].style.border = "1px solid transparent";
             document.getElementsByClassName("nota")[1].style.border = "1px solid transparent";
             document.getElementsByClassName("nota")[2].style.border = "1px solid white";
@@ -247,7 +249,7 @@ function sonido() {
             osc1.frequency.setValueAtTime(frecuenciaActual[0], aContext.currentTime);
             osc2.frequency.setValueAtTime(frecuenciaActual[1], aContext.currentTime);
             osc3.frequency.setValueAtTime(frecuenciaActual[2], aContext.currentTime);
-            gainNode.gain.setValueAtTime(0.02, aContext.currentTime);
+            gainNode.gain.setValueAtTime(volumen, aContext.currentTime);
             document.getElementsByClassName("nota")[0].style.border = "1px solid transparent";
             document.getElementsByClassName("nota")[1].style.border = "1px solid transparent";
             document.getElementsByClassName("nota")[2].style.border = "1px solid transparent";
